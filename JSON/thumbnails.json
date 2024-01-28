@@ -1,0 +1,40 @@
+{
+  "thumbnails": [
+    {
+      "id": 1,
+      "src": "images/img1.webp",
+      "category": "Медия",
+      "heading": "Очаквайте новият сезон на  Hell's Kitchen",
+      "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sem varius, maximus purus eget, dignissim dui.",
+      "published": "Днес",
+      "views": "10k"
+    },
+    {
+      "id": 2,
+      "src": "images/img2.jpg",
+      "category": "Съвети в кухнята",
+      "heading": "3 Нестандартни рецепти за горещ шоколад",
+      "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sem varius, maximus purus eget, dignissim dui.",
+      "published": "Днес",
+      "views": "1.5k"
+    },
+    {
+      "id": 3,
+      "src": "images/img3.png",
+      "category": "Съвети в кухнята",
+      "heading": "Как да си направите вкусни курабийки у дома?",
+      "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sem varius, maximus purus eget, dignissim dui.",
+      "published": "Днес",
+      "views": "3.6k"
+    },
+    {
+      "id": 4,
+      "src": "images/img4.jpg",
+      "category": "Здраве и Спорт",
+      "heading": "Здравословно Хранене: Малки Промени, Големи Ползи",
+      "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sem varius, maximus purus eget, dignissim dui.",
+      "published": "Днес",
+      "views": "7k"
+    }
+  ]
+}
