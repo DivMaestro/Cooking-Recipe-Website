@@ -2,13 +2,13 @@
 fetch("JSON/thumbnails.json")
   .then((response) => response.json())
   .then((data) => {
-    // Call a function to create thumbnails using the fetched data
+    // Извиква функцията за създаване на thumbnails използвайки извлечените данни от thumbnails.json
     createThumbnails(data.thumbnails);
   })
   .catch((error) => console.error("Error fetching JSON:", error));
 
-// Function to create thumbnail elements
-function createThumbnails(thumbnails) {
+// Функция за създаване на  thumbnail елементи
+const  createThumbnails = (thumbnails) => {
   let thumbnailContainer = document.getElementById("thumbnail-container");
 
   // Loop through the thumbnails and create elements
