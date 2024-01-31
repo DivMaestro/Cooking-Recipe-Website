@@ -2,16 +2,38 @@
 fetch("JSON/thumbnails.json")
   .then((response) => response.json())
   .then((data) => {
-    // Извиква функцията за създаване на thumbnails използвайки извлечените данни от thumbnails.json
+
+    createGallery(data.thumbnails);
+    // Извиква функцията за създаване на thumbnails използвайки извлечените данни от обектите във thumbnails.json
     createThumbnails(data.thumbnails);
   })
   .catch((error) => console.error("Error fetching JSON:", error));
 
+
+const createGallery = (frames) =>{
+let frameContainer = document.getElementById("frame-container");
+
+frames.forEach((frame) =>{
+  let frameElement = document.createElement("div");
+  frameElement.className = "Slide";
+  frameElement.innerHTML = `
+  <img src="${frame.src}" alt="${frame.heading}">
+  <div class="banner-content">
+    <article>
+      <h1>${frame.heading}</h1>
+      <p>${frame.subject}</p>
+    </article>
+  </div>
+  `;
+
+  frameContainer.appendChild(frameElement);
+})
+}
 // Функция за създаване на  thumbnail елементи
 const  createThumbnails = (thumbnails) => {
   let thumbnailContainer = document.getElementById("thumbnail-container");
 
-  // Loop through the thumbnails and create elements
+  //  Създава се цикъл в който се създават динамично HTML елементи за thumbnail според броят обекти в JSON файлът
   thumbnails.forEach((thumbnail) => {
     let thumbnailElement = document.createElement("div");
     thumbnailElement.className = "col-lg-6 col-12";
