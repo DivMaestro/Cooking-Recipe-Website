@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <div class="row banner-container">
-    <div class="gallery-container col-sm-7">
+  <div class="row banner-container pl-0">
+    <div class="gallery-container col-sm-7 pl-0">
       <div class="gallery-frame" id="frame-container">
       </div>
     </div>

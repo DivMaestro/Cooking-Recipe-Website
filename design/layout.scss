@@ -1,26 +1,26 @@
-
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
-.banner-container{
-    height: 100vh;
+
+.banner-container {
+  height: 100vh;
 }
 
 .gallery-container {
-        position: sticky;
-        height: 80vh;
-        top: 0;
-      padding: 0;
-      margin: 0;
-    }
+  position: sticky;
+  top: 0;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+}
 
-    .gallery-frame{
-      position: relative;
-      width: 100%;
-    height: 100%;
-    }
+.gallery-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
 .Slide {
   position: absolute;
@@ -39,14 +39,14 @@ $xl: 1200px;
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0, 0.815) 0%,
+    rgba(0, 0, 0, 0.568) 100%
   );
 
-  article{ 
+  article {
     color: white; /* Text color */
-  margin: 1em 1em 1em 1em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.925); /* Add a shadow for better visibility */
+    margin: 1em 1em 1em 1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.925); /* Add a shadow for better visibility */
   }
 
   h1 {
@@ -57,7 +57,7 @@ $xl: 1200px;
     font-size: 1.3em; /* Adjust the font size as needed */
   }
 
-  span{
+  span {
     font-size: 1.3em; /* Adjust the font size as needed */
 
     font-weight: bold;
@@ -104,36 +104,45 @@ $xl: 1200px;
 }
 
 .time-and-views {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+
+  span {
+    font-size: 0.8em;
+    font-weight: bold;
     margin-left: 5px;
-
-    span{
-        font-size: 0.8em;
-        font-weight: bold;
-        margin-left: 5px;
-    }
   }
+}
 
-  .published-day {
-    display: flex;
-    align-items: center;
-    padding: 0 0 5px 5px;
+.published-day {
+  display: flex;
+  align-items: center;
+  padding: 0 0 5px 5px;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  padding: 0 0 5px 5px;
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
   }
-  
-  .views {
-    display: flex;
-    align-items: center;
-    padding: 0 0 5px 5px;
-  }
+}
 
-  .icon-container {
-    width: 20px;
-    height: 20px;
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 1em;
 
-    img{
-        width: 100%;
-        height: 100%;
-    }
-  }
-
+}
