@@ -36,7 +36,7 @@ const  createThumbnails = (thumbnails) => {
   //  Създава се цикъл в който се създават динамично HTML елементи за thumbnail според броят обекти в JSON файлът
   thumbnails.forEach((thumbnail) => {
     let thumbnailElement = document.createElement("div");
-    thumbnailElement.className = "col-lg-6 col-12";
+    thumbnailElement.className = "col-md-6";
     thumbnailElement.innerHTML = `
     <div class='thumbnail'>
     <div class='thumbnail-image'>
